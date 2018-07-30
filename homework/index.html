@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Basics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="main">
+      <div id="container">
+        <div id="content" role="main">
+          <!-- TODO: Content goes here -->
+          <header>
+            <div class="logo" id="logo">
+              <a href="#">
+                <img src="logo.png" alt="logo">
+              </a>
+            </div>
+            <div class="page-title_header">
+              <h1><b>HTML Elements</b></h1>
+            </div>
+
+            <hr>
+            <nav>
+              <a href="#logo">Home</a>
+              <a href="#headers">Headers</a>
+              <a href="#table">Table</a>
+              <a href="#lists">List</a>
+              <a href="#text_formats">Text formats</a>
+              <a href="#Blockquotes">Blockquotes</a>
+            </nav>
+            <hr>
+          </header>
+          <main>
+              <div class="attention">
+                <p>Pay attention to h1 tag inside section element. Font-size for h1 is the same as font-size for h2, because we have to use only one h1 on the page, and it is commonly used inside header</p>
+              </div>
+              <section id="headers">
+                <h2>Header 2</h2>
+                <h3>Header 3</h3>
+                <h4>Header 4</h4>
+                <h5>Header 5</h5>
+                <h6>Header 6</h6>
+              </section>
+              <section id="table">
+                <h2>Table</h2>
+                <table>
+                  <!--<caption>Table</caption>-->
+                  <thead>
+                  <tr>
+                    <th>Header</th>
+                    <th>Header</th>
+                    <th>Header</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td><strong>Strong</strong></td>
+                    <td>CO<sub>2</sub></td>
+                    <td><a href="#">Some link</a></td>
+                  </tr>
+                  <tr>
+                    <td><i>Italic</i></td>
+                    <td><abbr title="Abbreviation">Abbreviation</abbr></td>
+                    <td><s>Delete</s></td>
+                  </tr>
+                  <tr>
+                    <td><u>Underline</u></td>
+                    <td>5<sup>3</sup>=125</td>
+                    <td><ins>Inserted</ins></td>
+                  </tr>
+                  </tbody>
+                </table>
+              </section>
+              <section id="lists">
+                <div class="unsorted_list">
+                  <h2>Unordered List</h2>
+                  <ul>
+                    <li>List item 1</li>
+                    <li>List item 2
+                      <ul>
+                        <li>Some nested list item 1</li>
+                      </ul>
+                    </li>
+                    <li>List item 3</li>
+                  </ul>
+                </div>
+                <div class="ordered_list">
+                  <h2>Ordered list</h2>
+                  <ol>
+                    <li>List item 1</li>
+                    <li>List item 2
+                      <ol>
+                        <li>Some nested list item 1</li>
+                      </ol>
+                    </li>
+                    <li>List item 3</li>
+                  </ol>
+                </div>
+                <div class="definition_list">
+                  <h2>Definition List</h2>
+                  <dl>
+                    <dt>defines terms 1</dt>
+                    <dd>description 1</dd>
+                    <dt>defines terms 2</dt>
+                    <dd>description </dd>
+                  </dl>
+                </div>
+              </section>
+              <section id="text_formats">
+                <div class="details">
+                  <h2>Details</h2>
+                  <details open>
+                    <summary>Some details element</summary>
+                    <p>Here are more details about the details.</p>
+                  </details>
+                  <details>
+                    <summary>Some details element</summary>
+                    <p>Here are more details about the details.</p>
+                  </details>
+                </div>
+                <hr>
+                <div class="article">
+                  <h2>Text formats</h2>
+                  <h3>Article Text</h3>
+                  <article>
+                    <header>
+                      <h2>Article Title</h2>
+                    </header>
+                    <p>Article description</p>
+                  </article>
+                </div>
+                <div class="formatted_text">
+                  <h2>Preformatted Text</h2>
+                </div>
+                <pre><strong>Text</strong>
+  in a <strong>pre</strong> element
+    is displayed in a fixed-width
+font, and it preserves
+both           spaces and
+    line breaks
+              </pre>
+                <div class="code">
+                  <h2>Code</h2>
+                  <pre>
+.wrapper {
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+}
+              </pre>
+                </div>
+
+                <div id="Blockquotes">
+                  <h2>Blockquotes</h2>
+                    <p>
+                        Let’s keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.
+                    </p>
+                  <blockquote>"If you go back a few hundred years, what we take for granted today would seem like magic-being able
+                    to talk to people over long distances, to transmit images, flying, accessing vast amounts of data like an oracle.
+                    These are all things that would have been considered magic a few hundred years ago."<br>
+                    <a href="#">Elon Musk</a></blockquote>
+                </div>
+              </section>
+          </main>
+
+        </div>
+        <footer class="footer">
+          <span>© Copyright Epam Systems</span>
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
