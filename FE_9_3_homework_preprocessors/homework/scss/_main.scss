@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+}
+.main-wrapper {
+  padding-right: 170px;
+  padding-left: 170px;
+  margin-right: auto;
+  margin-left: auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  nav {
+    width: 100%;
+    border-bottom: 1px solid #617D8A;
+    border-top: 1px solid #617D8A;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+    a {
+      color: #1FBCD3;
+      text-decoration: none;
+      transition: 0.3s all ease;
+      padding: 25px;
+      text-transform: uppercase;
+      &:hover {
+        color: #93B5C7;
+
+      }
+    }
+  }
+}
+.logo {
+  img {
+    width: 390px;
+  }
+}
+
+.toolbar {
+  display: flex;
+  justify-content: flex-end;
+  //TODO fix color border
+  input {
+    border: 1px solid #1FBCD3;
+    padding: 10px;
+    color: #1FBCD3;
+    &::placeholder {
+      color: #1FBCD3;
+    }
+  }
+}
+
+.post-list {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  article {
+    background-color: #EFEFEF;
+    width: 47%;
+    margin-bottom: 20px;
+    padding: 10px;
+    & > div {
+      padding: 0px 10px;
+    }
+    .post-description {
+      color: #159587;
+      padding: 12px 0px;
+      border-bottom: 1px solid #617D8A;
+    }
+    h3 {
+      color: #1697A6;
+      margin: 0px;
+      padding: 12px 0 0 0;
+    }
+    p {
+      color: #617D8A;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.about {
+  h1 {
+    text-align: right;
+    color: #1697A6;
+    text-transform: uppercase;
+  }
+  p {
+    color: #617D8A;
+  }
+  img {
+    width: 100%;
+  }
+}
+.contact-form {
+  h1, h4 {
+    text-align: right;
+    color: #1697A6;
+  }
+}
+
+.contact-form__wrap {
+  input, textarea {
+    width: 100%;
+    border: 1px solid #617D8A;
+    margin-bottom: 20px;
+    padding: 15px 0 15px 15px;
+  }
+
+}
+.submit_form {
+  display: flex;
+  justify-content: flex-end;
+}
+.btn {
+  transition: 0.3s all ease;
+  border: none;
+  padding: 15px 80px;
+  background-color: #1FBCD3;
+  color: #ffffff;
+  &:hover {
+    background-color: #617D8A;
+    color: #1697A6;
+  }
+}

@@ -1,0 +1,99 @@
+body {
+  margin: 0; }
+
+.main-wrapper {
+  padding-right: 170px;
+  padding-left: 170px;
+  margin-right: auto;
+  margin-left: auto; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; }
+  header nav {
+    width: 100%;
+    border-bottom: 1px solid #617D8A;
+    border-top: 1px solid #617D8A;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px; }
+    header nav a {
+      color: #1FBCD3;
+      text-decoration: none;
+      transition: 0.3s all ease;
+      padding: 25px;
+      text-transform: uppercase; }
+      header nav a:hover {
+        color: #93B5C7; }
+
+.logo img {
+  width: 390px; }
+
+.toolbar {
+  display: flex;
+  justify-content: flex-end; }
+  .toolbar input {
+    border: 1px solid #1FBCD3;
+    padding: 10px;
+    color: #1FBCD3; }
+    .toolbar input::placeholder {
+      color: #1FBCD3; }
+
+.post-list {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .post-list article {
+    background-color: #EFEFEF;
+    width: 47%;
+    margin-bottom: 20px;
+    padding: 10px; }
+    .post-list article > div {
+      padding: 0px 10px; }
+    .post-list article .post-description {
+      color: #159587;
+      padding: 12px 0px;
+      border-bottom: 1px solid #617D8A; }
+    .post-list article h3 {
+      color: #1697A6;
+      margin: 0px;
+      padding: 12px 0 0 0; }
+    .post-list article p {
+      color: #617D8A; }
+    .post-list article img {
+      width: 100%; }
+
+.about h1 {
+  text-align: right;
+  color: #1697A6;
+  text-transform: uppercase; }
+.about p {
+  color: #617D8A; }
+.about img {
+  width: 100%; }
+
+.contact-form h1, .contact-form h4 {
+  text-align: right;
+  color: #1697A6; }
+
+.contact-form__wrap input, .contact-form__wrap textarea {
+  width: 100%;
+  border: 1px solid #617D8A;
+  margin-bottom: 20px;
+  padding: 15px 0 15px 15px; }
+
+.submit_form {
+  display: flex;
+  justify-content: flex-end; }
+
+.btn {
+  transition: 0.3s all ease;
+  border: none;
+  padding: 15px 80px;
+  background-color: #1FBCD3;
+  color: #ffffff; }
+  .btn:hover {
+    background-color: #617D8A;
+    color: #1697A6; }
