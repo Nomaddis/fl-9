@@ -2,10 +2,8 @@ body {
   margin: 0; }
 
 .main-wrapper {
-  padding-right: 170px;
-  padding-left: 170px;
-  margin-right: auto;
-  margin-left: auto; }
+  width: 960px;
+  margin: 0 auto; }
 
 header {
   display: flex;
@@ -17,7 +15,8 @@ header {
     border-top: 1px solid #617D8A;
     display: flex;
     justify-content: center;
-    margin-bottom: 45px; }
+    margin-bottom: 45px;
+    font-family: Geneva, Arial, Helvetica, sans-serif; }
     header nav a {
       color: #1FBCD3;
       text-decoration: none;
@@ -25,7 +24,7 @@ header {
       padding: 25px;
       text-transform: uppercase; }
       header nav a:hover {
-        color: #93B5C7; }
+        color: #383838; }
 
 .logo img {
   width: 390px; }
@@ -38,7 +37,8 @@ header {
     padding: 10px;
     color: #1FBCD3; }
     .toolbar input::placeholder {
-      color: #1FBCD3; }
+      color: #1FBCD3;
+      font-weight: 700; }
 
 .post-list {
   margin-top: 25px;
@@ -49,40 +49,53 @@ header {
     background-color: #EFEFEF;
     width: 47%;
     margin-bottom: 20px;
-    padding: 10px; }
+    padding: 10px;
+    height: 100%; }
     .post-list article > div {
       padding: 0px 10px; }
     .post-list article .post-description {
       color: #159587;
       padding: 12px 0px;
-      border-bottom: 1px solid #617D8A; }
+      border-bottom: 1px solid #617D8A;
+      font-family: Geneva, Arial, Helvetica, sans-serif; }
     .post-list article h3 {
       color: #1697A6;
+      text-transform: uppercase;
       margin: 0px;
-      padding: 12px 0 0 0; }
+      padding: 12px 0 0 0;
+      font-family: Geneva, Arial, Helvetica, sans-serif; }
     .post-list article p {
-      color: #617D8A; }
+      color: #617D8A;
+      font-family: Geneva, Arial, Helvetica, sans-serif; }
     .post-list article img {
       width: 100%; }
 
-.about h1 {
-  text-align: right;
-  color: #1697A6;
-  text-transform: uppercase; }
-.about p {
-  color: #617D8A; }
-.about img {
-  width: 100%; }
+.about {
+  margin-top: 50px; }
+  .about h1 {
+    text-align: right;
+    color: #1FBCD3;
+    text-transform: uppercase;
+    font-family: Geneva, Arial, Helvetica, sans-serif; }
+  .about p {
+    color: #617D8A;
+    font-family: Geneva, Arial, Helvetica, sans-serif; }
+  .about img {
+    width: 100%; }
 
-.contact-form h1, .contact-form h4 {
-  text-align: right;
-  color: #1697A6; }
+.contact-form {
+  margin-top: 50px; }
+  .contact-form h1, .contact-form h4 {
+    text-align: right;
+    color: #1FBCD3;
+    font-family: Geneva, Arial, Helvetica, sans-serif; }
 
 .contact-form__wrap input, .contact-form__wrap textarea {
   width: 100%;
   border: 1px solid #617D8A;
   margin-bottom: 20px;
-  padding: 15px 0 15px 15px; }
+  padding: 15px 0 15px 15px;
+  font-family: Geneva, Arial, Helvetica, sans-serif; }
 
 .submit_form {
   display: flex;
@@ -93,7 +106,11 @@ header {
   border: none;
   padding: 15px 80px;
   background-color: #1FBCD3;
-  color: #ffffff; }
+  color: #ffffff;
+  text-transform: uppercase; }
   .btn:hover {
     background-color: #617D8A;
     color: #1697A6; }
+
+footer {
+  margin-top: 10px; }

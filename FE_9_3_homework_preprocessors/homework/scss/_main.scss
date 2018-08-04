@@ -2,10 +2,12 @@ body {
   margin: 0;
 }
 .main-wrapper {
-  padding-right: 170px;
-  padding-left: 170px;
-  margin-right: auto;
-  margin-left: auto;
+  //padding-right: 170px;
+  //padding-left: 170px;
+  //margin-right: auto;
+  //margin-left: auto;
+  width: 960px;
+  margin: 0 auto;
 }
 header {
   display: flex;
@@ -13,19 +15,20 @@ header {
   align-items: flex-end;
   nav {
     width: 100%;
-    border-bottom: 1px solid #617D8A;
-    border-top: 1px solid #617D8A;
+    border-bottom: 1px solid $navBorder;
+    border-top: 1px solid $navBorder;
     display: flex;
     justify-content: center;
     margin-bottom: 45px;
+    font-family: $fontFamily;
     a {
-      color: #1FBCD3;
+      color: $titleColor;
       text-decoration: none;
       transition: 0.3s all ease;
       padding: 25px;
       text-transform: uppercase;
       &:hover {
-        color: #93B5C7;
+        color: #383838;
 
       }
     }
@@ -42,11 +45,12 @@ header {
   justify-content: flex-end;
   //TODO fix color border
   input {
-    border: 1px solid #1FBCD3;
+    border: 1px solid $titleColor;
     padding: 10px;
-    color: #1FBCD3;
+    color: $titleColor;
     &::placeholder {
-      color: #1FBCD3;
+      color: $titleColor;
+      font-weight: 700;
     }
   }
 }
@@ -62,21 +66,26 @@ header {
     width: 47%;
     margin-bottom: 20px;
     padding: 10px;
+    height: 100%;
     & > div {
       padding: 0px 10px;
     }
     .post-description {
-      color: #159587;
+      color: $postDescriptionColor;
       padding: 12px 0px;
       border-bottom: 1px solid #617D8A;
+      font-family: $fontFamily;
     }
     h3 {
-      color: #1697A6;
+      color: $postTitleColor;
+      text-transform: uppercase;
       margin: 0px;
       padding: 12px 0 0 0;
+      font-family: $fontFamily;
     }
     p {
-      color: #617D8A;
+      color: $postText;
+      font-family: $fontFamily;
     }
     img {
       width: 100%;
@@ -85,31 +94,37 @@ header {
 }
 
 .about {
+  margin-top: 50px;
   h1 {
     text-align: right;
-    color: #1697A6;
+    color: $titleColor;
     text-transform: uppercase;
+    font-family: $fontFamily;
   }
   p {
-    color: #617D8A;
+    color: $postText;
+    font-family: $fontFamily;
   }
   img {
     width: 100%;
   }
 }
 .contact-form {
+  margin-top: 50px;
   h1, h4 {
     text-align: right;
-    color: #1697A6;
+    color: $titleColor;
+    font-family: $fontFamily;
   }
 }
 
 .contact-form__wrap {
   input, textarea {
     width: 100%;
-    border: 1px solid #617D8A;
+    border: 1px solid $formBorder;
     margin-bottom: 20px;
     padding: 15px 0 15px 15px;
+    font-family: $fontFamily;
   }
 
 }
@@ -121,10 +136,14 @@ header {
   transition: 0.3s all ease;
   border: none;
   padding: 15px 80px;
-  background-color: #1FBCD3;
+  background-color: $titleColor;
   color: #ffffff;
+  text-transform: uppercase;
   &:hover {
     background-color: #617D8A;
     color: #1697A6;
   }
+}
+footer {
+  margin-top: 10px;
 }
