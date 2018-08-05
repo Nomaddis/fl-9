@@ -2,7 +2,9 @@
     @page {
         margin: 30px 0 0 0;
     }
-    .tm-sidebar, #about, section:nth-child(n+3){
+    .tm-sidebar,
+    #about,
+    section:nth-child(n+3) {
         display: none;
     }
     #home .tm-banner {
