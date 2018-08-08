@@ -1,0 +1,42 @@
+@import "normilize";
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.header-wrap {
+  position: relative;
+  background: url("../img/apples.jpg") no-repeat center ;
+  background-size: cover;
+  width: 100%;
+  height: 716px;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+
+
+  img {
+    width: 100%;
+    height: 918px;
+  }
+}

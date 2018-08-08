@@ -1,0 +1,118 @@
+body {
+  margin: 0; }
+
+.main-wrapper {
+  width: 960px;
+  margin: 0 auto; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; }
+  header nav {
+    width: 100%;
+    border-bottom: 1px solid #617D8A;
+    border-top: 1px solid #617D8A;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+    font-family: Geneva, Arial, Helvetica, sans-serif; }
+    header nav a {
+      color: #1FBCD3;
+      text-decoration: none;
+      transition: 0.3s all ease;
+      padding: 25px;
+      text-transform: uppercase; }
+      header nav a:hover {
+        color: #383838; }
+
+.logo img {
+  width: 390px; }
+
+.toolbar {
+  display: flex;
+  justify-content: flex-end; }
+  .toolbar input {
+    border: 1px solid #1FBCD3;
+    padding: 10px;
+    color: #1FBCD3; }
+    .toolbar input::placeholder {
+      color: #1FBCD3;
+      font-weight: 700; }
+
+.post-list {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .post-list article {
+    background-color: #EFEFEF;
+    width: 47%;
+    margin-bottom: 20px;
+    padding: 10px;
+    height: 100%; }
+    .post-list article > div {
+      padding: 0px 10px; }
+    .post-list article .post-description {
+      color: #159587;
+      padding: 12px 0px;
+      border-bottom: 1px solid #617D8A;
+      font-family: Geneva, Arial, Helvetica, sans-serif; }
+    .post-list article h3 {
+      color: #1697A6;
+      text-transform: uppercase;
+      margin: 0px;
+      padding: 12px 0 0 0;
+      font-family: Geneva, Arial, Helvetica, sans-serif; }
+    .post-list article p {
+      color: #617D8A;
+      font-family: Geneva, Arial, Helvetica, sans-serif; }
+    .post-list article img {
+      width: 100%; }
+
+.about {
+  margin-top: 50px; }
+  .about h1 {
+    text-align: right;
+    color: #1FBCD3;
+    text-transform: uppercase;
+    font-family: Geneva, Arial, Helvetica, sans-serif; }
+  .about p {
+    color: #617D8A;
+    font-family: Geneva, Arial, Helvetica, sans-serif; }
+  .about img {
+    width: 100%; }
+
+.contact-form {
+  margin-top: 50px; }
+  .contact-form h1, .contact-form h4 {
+    text-align: right;
+    color: #1FBCD3;
+    font-family: Geneva, Arial, Helvetica, sans-serif; }
+
+.contact-form__wrap input, .contact-form__wrap textarea {
+  width: 100%;
+  border: 1px solid #617D8A;
+  margin-bottom: 20px;
+  padding: 15px 0 15px 15px;
+  font-family: Geneva, Arial, Helvetica, sans-serif; }
+
+.submit_form {
+  display: flex;
+  justify-content: flex-end; }
+
+.btn {
+  transition: 0.3s all ease;
+  border: none;
+  padding: 15px 80px;
+  background-color: #1FBCD3;
+  color: #ffffff;
+  text-transform: uppercase; }
+  .btn:hover {
+    background-color: #617D8A;
+    color: #1697A6; }
+
+footer {
+  margin-top: 10px; }
+
+/*# sourceMappingURL=style1.css.map */
