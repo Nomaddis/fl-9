@@ -53,28 +53,36 @@ body {
     margin-right: 8px;
     a {
       text-decoration: none;
-      color: #fff;
+      color: #F0F0F0;
       transition: 0.3s all ease;
       font-size: 18px;
       margin-left: 46px;
       &:hover {
-        color: #B7C8D9;
+        color: #9E9E9E;
       }
     }
   }
 }
 .logo {
   h2 {
-    color: #fff;
+    color: #F0F0F0;
     font-weight: 500;
     font-size: 17px;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    &:hover {
+      color: #9E9E9E;
+
+    }
   }
 }
 .header-central-logo {
   display: flex;
   justify-content: center;
+}
+.header-central-logo_inner {
+  margin-bottom: 58px;
 }
 .header-central-logo_text {
   h1 {
@@ -82,10 +90,14 @@ body {
     color: #fff;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 3.5em;
+    font-size: 62px;
+    margin-bottom: 0;
+    transition: 0.3s all ease;
+
+
     span {
       font-weight: 600;
-      font-size: 2em;
+      font-size: 115px;
     }
   }
 }
@@ -162,6 +174,7 @@ body {
     background: rgba(0, 0, 0, 0.5);
     span {
       color: #fff;
+      vertical-align: middle;
     }
   }
   .img-text {
@@ -196,6 +209,15 @@ body {
   }
   margin-top: 50px;
 }
+@media screen and (max-width: 1024px) {
+  .subscribe {
+    padding-left: 15px;
+    padding-right: 15px;
+    h2 {
+      font-size: 18px;
+    }
+  }
+}
 .subscribe-inner {
   display: flex;
   align-items: center;
@@ -203,12 +225,18 @@ body {
   justify-content: space-around;
 }
 .subscribe__form {
+  width: 63%;
+  form {
+    display: flex;
+  }
   input {
     border: 1px solid black;
     padding: 20px;
-    width: 670px;
+    width: 77%;
+    background: rgb(243, 243, 243);
     &::placeholder {
       font-size: 16px;
+      color: #000;
     }
   }
   button {
@@ -216,15 +244,17 @@ body {
     border: none;
     color: #fff;
     padding: 21px;
-    margin-left: -4px;
+    margin-left: -5px;
   }
 }
-//================================= footer =================
+//================================= footer =====================
 .footer {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   &__item {
     margin-right: 20px;
+    width: 23%;
     p, a, span {
       color: #A4A4A4;
     }
@@ -255,6 +285,7 @@ body {
   }
 }
 .footer__item__form {
+  width: 100%;
   input {
     width: 58%;
     padding: 8px;
