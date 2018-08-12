@@ -536,6 +536,9 @@ body {
   .footer__item__form button {
     padding: 9px; }
 
+.footer-menu__left span {
+  color: #9E9E9E; }
+
 .footer-menu {
   display: flex;
   justify-content: space-between;
@@ -548,7 +551,7 @@ body {
     transition: 0.3s all ease;
     margin-right: 15px; }
     .footer-menu nav a:hover {
-      color: red; }
+      color: #B7C8D9; }
     .footer-menu nav a:last-child {
       margin-right: 0; }
 

@@ -297,6 +297,11 @@ body {
     padding: 9px;
   }
 }
+.footer-menu__left{
+  span {
+    color: #9E9E9E;
+  }
+}
 .footer-menu {
   display: flex;
   justify-content:space-between;
@@ -310,7 +315,7 @@ body {
       transition: 0.3s all ease;
       margin-right: 15px;
       &:hover {
-        color: red;
+        color: #B7C8D9;
       }
       &:last-child {
         margin-right: 0;
@@ -318,12 +323,3 @@ body {
     }
   }
 }
-//#B7C8D9
-//#FFF
-//#F3F3F3
-//#A4A4A4
-//#F0F0F0
-//#000
-//#343638
-//#E8E8E8
-//#9E9E9E
