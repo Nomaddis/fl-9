@@ -11,7 +11,6 @@ if(!start) {
 }
 function startGame(min = 0, max, prize = MIN_PRIZE, totalPrize = 0) {
     let iNum = getRandom(min, max);
-    console.log(iNum);
     let possiblePrize = prize;
     for(let i = 3; i>0; i--, possiblePrize=Math.floor(possiblePrize/2)) {
         let uNum = prompt(
@@ -19,7 +18,7 @@ function startGame(min = 0, max, prize = MIN_PRIZE, totalPrize = 0) {
 Attempts left: ${i}
 Total prize: ${totalPrize}$
 Possible prize on current attempts ${possiblePrize}$`);
-        if(uNum === iNum && i === 3) {
+        if(+uNum === iNum && i === 3) {
             totalPrize += possiblePrize;
             if(confirm(`Congratulation!   Your prize is:  $${possiblePrize} Do you want to continue?`)) {
                 startGame(min, max*2, prize*2, totalPrize);
@@ -28,7 +27,7 @@ Possible prize on current attempts ${possiblePrize}$`);
                 alert(`Thank you for a game. Your prize is: ${totalPrize}`);
                 break;
             }
-        } else if(uNum === iNum && i === 2) {
+        } else if(+uNum === iNum && i === 2) {
             possiblePrize = Math.floor(prize/2);
             totalPrize = possiblePrize + totalPrize;
             if(confirm(`Congratulation!   Your prize is:  $${possiblePrize} Do you want to continue?`)) {
@@ -37,7 +36,7 @@ Possible prize on current attempts ${possiblePrize}$`);
             } else {
                 alert(`Thank you for a game. Your prize is: ${totalPrize}`);
             }
-        } else if(uNum === iNum && i === ONE) {
+        } else if(+uNum === iNum && i === ONE) {
             possiblePrize = Math.floor(prize/4);
             totalPrize = possiblePrize + totalPrize;
             if(confirm(`Congratulation!   Your prize is:  $${possiblePrize} Do you want to continue?`)) {
