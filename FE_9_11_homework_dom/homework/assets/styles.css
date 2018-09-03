@@ -1,0 +1,65 @@
+/* Your styles goes here */
+#root {
+    display: flex;
+    justify-content: center;
+}
+.task-creator {
+    border: 2px solid black;
+    width: 33.3%;
+    padding: 20px;
+}
+.creator-header {
+    border-bottom: 2px solid black;
+}
+.creator-header-title h1 {
+    text-align: center;
+    margin: 0;
+}
+.action {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+}
+.action-input {
+    width: 80%;
+}
+.action-input input {
+    width: 100%;
+    border: 1px solid black;
+    padding: 2px 5px;
+}
+.action-btn button {
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+#main-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.listitem {
+    display: flex;
+    justify-content: space-between;
+}
+#checkbox-task {
+    cursor: pointer;
+}
+#listitem-edit {
+    cursor: pointer;
+
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.listitem-group {
+    display: flex;
+    align-items: center;
+}

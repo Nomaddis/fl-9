@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework 11 - TODO Cat List</title>
+  <link rel="stylesheet" href="./assets/material-icons/material-icons.css">
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+  <div id="root">
+    <div class="task-creator">
+      <div class="creator-inner">
+        <div class="creator-header">
+          <div class="creator-header-title">
+            <h1>TODO Cat List</h1>
+          </div>
+          <form class="action">
+            <div class="action-input action__item">
+              <input type="text" id="taskDescription" placeholder="Add New Action">
+            </div>
+            <div class="action-btn action__item">
+              <button type="submit" id="addItem"><i class="material-icons">add_box</i></button>
+            </div>
+          </form>
+        </div>
+        <div class="creator-main-list">
+          <ul id="main-list">
+            <li>
+              <div id="main-list__item" class="listitem main-list__item">
+                <div class="listitem-group">
+                  <div id="listitem-checkox"><i class="material-icons" id="checkbox-task">check_box_outline_blank</i></div>
+                  <div class="listitem-text"><span>Some default task</span></div>
+                </div>
+                <button id="listitem-edit"><i class="material-icons">delete</i></button>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="creator-footer"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./src/app.js"></script>
+</body>
+</html>
+
+<!--add_box - іконка з плюсом-->
+<!--check_box_outline_blank - чекбокс (не відмічений)-->
+<!--check_box - чекбокс (відмічений)-->
+<!--delete-->
