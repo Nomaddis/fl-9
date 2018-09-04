@@ -10,42 +10,35 @@
   <div id="root">
     <div class="task-creator">
       <div class="creator-inner">
-        <div class="creator-header">
-          <div class="creator-header-title">
-            <h1>TODO Cat List</h1>
-          </div>
-          <form class="action">
-            <div class="action-input action__item">
-              <input type="text" id="taskDescription" placeholder="Add New Action">
+        <header>
+          <div class="creator-header">
+            <div class="creator-header-title">
+              <h1>TODO Cat List</h1>
             </div>
-            <div class="action-btn action__item">
-              <button type="submit" id="addItem"><i class="material-icons">add_box</i></button>
-            </div>
-          </form>
-        </div>
-        <div class="creator-main-list">
-          <ul id="main-list">
-            <li>
-              <div id="main-list__item" class="listitem main-list__item">
-                <div class="listitem-group">
-                  <div id="listitem-checkox"><i class="material-icons" id="checkbox-task">check_box_outline_blank</i></div>
-                  <div class="listitem-text"><span>Some default task</span></div>
-                </div>
-                <button id="listitem-edit"><i class="material-icons">delete</i></button>
+            <form class="action">
+              <div class="action-input action__item">
+                <input type="text" id="taskDescription" placeholder="Add New Action">
               </div>
-            </li>
-          </ul>
-        </div>
-        <div class="creator-footer"></div>
+              <div class="action-btn action__item">
+                <button type="submit" id="addItem"><i class="material-icons">add_box</i></button>
+              </div>
+            </form>
+          </div>
+        </header>
+        <main>
+          <div class="creator-main-list">
+            <ul id="main-list">
+            </ul>
+          </div>
+        </main>
+        <footer>
+          <div class="creator-footer">
+            <img class="cat-img" src="./assets/img/cat.png" alt="Cat Logo">
+          </div>
+        </footer>
       </div>
     </div>
   </div>
-
   <script src="./src/app.js"></script>
 </body>
 </html>
-
-<!--add_box - іконка з плюсом-->
-<!--check_box_outline_blank - чекбокс (не відмічений)-->
-<!--check_box - чекбокс (відмічений)-->
-<!--delete-->

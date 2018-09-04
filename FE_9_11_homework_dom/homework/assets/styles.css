@@ -7,6 +7,9 @@
     border: 2px solid black;
     width: 33.3%;
     padding: 20px;
+
+    height: 600px;
+    position: relative;
 }
 .creator-header {
     border-bottom: 2px solid black;
@@ -18,7 +21,7 @@
 .action {
     display: flex;
     justify-content: space-between;
-    padding: 10px 5px;
+    padding: 20px 10px;
 }
 .action-input {
     width: 80%;
@@ -26,7 +29,7 @@
 .action-input input {
     width: 100%;
     border: 1px solid black;
-    padding: 2px 5px;
+    padding: 4px 10px;
 }
 .action-btn button {
     cursor: pointer;
@@ -37,11 +40,17 @@
     outline: none;
     background: transparent;
 }
+.creator-main-list {
+    padding: 0px 10px;
+}
 
 #main-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+#main-list li {
+    padding: 5px 0px;
 }
 .listitem {
     display: flex;
@@ -50,9 +59,11 @@
 #checkbox-task {
     cursor: pointer;
 }
+.listitem-text {
+    margin-left: 5px;
+}
 #listitem-edit {
     cursor: pointer;
-
     padding: 0;
     margin: 0;
     outline: none;
@@ -62,4 +73,31 @@
 .listitem-group {
     display: flex;
     align-items: center;
+}
+.creator-footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 24px;
+    width: 92%;
+}
+.creator-footer img {
+    width: 80px;
+    height: 80px;
+}
+
+#main-list {
+  list-style-type: none;
+}
+
+#main-list li {
+  cursor: move;
+}
+#main-list li.dragElem {
+  opacity: 0.4;
+}
+#main-list li.over {
+  border-top: 2px solid black;
 }
