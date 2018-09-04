@@ -1,6 +1,9 @@
 let addTaskItem = document.getElementById('addItem');
 let taskItemList = document.getElementById('main-list');
-let listItemEdit = document.getElementById('listitem-edit');
+let input = document.getElementById('taskDescription');
+let inputBtn = document.getElementById('addItem');
+let error = document.getElementById('maximumError');
+error.style.display = 'none';
 let qtyOfItems = 0;
 const MAX_SIZE_OF_TASKS = 10;
 const ONE = 1;
@@ -13,10 +16,42 @@ function deleteNode(button) {
     num.remove();
 }
 
+function toggleNodeShowing(element) {
+    if (element.style.display === 'none') {
+        element.style.display = 'block';
+    } else {
+        element.style.display = 'none';
+    }
+}
+
+function toggleActions() {
+    if (input.disabled === true) {
+        input.disabled = false;
+        inputBtn.disabled = false;
+    } else {
+        input.disabled = true;
+        inputBtn.disabled = true;
+    }
+}
+
+function toggleAction(element) {
+    if (element.disabled === true) {
+        element.disabled = false;
+    } else {
+        element.disabled = true;
+    }
+}
+
 function changeItem(e) {
     console.log(e.target.nodeName);
     if (e.target.nodeName === 'I' && e.target.id !== 'checkbox-task' ) {
-        deleteNode(e.target);
+        if(qtyOfItems === MAX_SIZE_OF_TASKS) {
+            deleteNode(e.target);
+            toggleActions();
+            toggleNodeShowing(error);
+        } else {
+            deleteNode(e.target);
+        }
         qtyOfItems = qtyOfItems - ONE;
     } else if(e.target.id === 'checkbox-task'){
         changeCheckboxStatus(e.target);
@@ -73,12 +108,14 @@ function addTask(event) {
         listItem.innerHTML = newTask;
         document.getElementById('main-list').appendChild(listItem);
         qtyOfItems = qtyOfItems + ONE;
-    } else if(qtyOfItems === MAX_SIZE_OF_TASKS) {
-        alert('Maximum item per list are created');
+        console.log(qtyOfItems);
+        if (qtyOfItems === MAX_SIZE_OF_TASKS) {
+            toggleNodeShowing(error);
+            toggleActions();
+        }
     }
     let cols = document.querySelectorAll('#main-list li');
     [].forEach.call(cols, addDnDHandlers);
-
     event.preventDefault();
 }
 
