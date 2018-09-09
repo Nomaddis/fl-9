@@ -1,0 +1,35 @@
+/* Your styles go here */
+#index, index-control, #add, #modify, .add-input, .add-control, .modify-input, .modify-control, .index-button {
+    display: flex;
+    justify-content: center;
+}
+.index-inner, .add-inner, .modify-inner {
+    width: 33.3%;
+}
+#index-notification, .add-inner h1, .modify-inner h1 {
+    text-align: center;
+}
+.task-input {
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 8px 5px;
+}
+#add, #modify {
+    display: none;
+}
+
+#addButton {
+    background-color: #dcdddd;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+#taskList {
+    padding: 0;
+}
+#taskList li {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+}
