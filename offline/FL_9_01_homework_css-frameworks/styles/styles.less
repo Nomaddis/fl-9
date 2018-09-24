@@ -1,0 +1,62 @@
+@import "variables";
+
+.border {
+  &-primary {
+    border-color: @blue !important;
+  }
+  &-danger {
+    border-color: @red !important;
+  }
+  &-success {
+    border-color: @green !important;
+  }
+  &-warning {
+    border-color: @orange !important;
+  }
+}
+
+.bg {
+  &-primary {
+    background-color: @blue !important;
+  }
+  &-danger {
+    background-color: @red !important;
+  }
+  &-success {
+    background-color: @green !important;
+  }
+  &-warning {
+    background-color: @orange !important;
+  }
+  &-secondary {
+    background-color: @grey !important;
+  }
+}
+
+.text {
+  &-primary {
+    color: @blue !important;
+  }
+}
+
+.navbar {
+  border-bottom: 1px solid #e7e7e7;
+  .active {
+    .nav-link {
+      background-color: @blue;
+      color: #fff !important;
+    }
+  }
+  .nav-link {
+    padding: 10px;
+    color: #000 !important;
+  }
+  @media (min-width: 992px) {
+    & {
+      padding: 0 1rem;
+    }
+    .navbar-nav .nav-link {
+      padding: 15px 20px;
+    }
+  }
+}
